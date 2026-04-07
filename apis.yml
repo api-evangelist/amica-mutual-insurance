@@ -1,7 +1,12 @@
 aid: amica-mutual-insurance
-url: https://raw.githubusercontent.com/api-evangelist/amica-mutual-insurance/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/amica-mutual-insurance/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.amica-mutual-insurance.com
+description: >-
+  Amica Mutual Insurance is a mutual insurance company providing automobile, homeowners,
+  marine, personal umbrella liability, and life insurance to customers across the
+  United States.
