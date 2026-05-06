@@ -1,5 +1,6 @@
 specification: FinOps Framework
 specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
 alignedWith:
   framework: FinOps Foundation Framework
   frameworkUrl: https://www.finops.org/framework/
@@ -8,128 +9,60 @@ alignedWith:
   dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
 provider: Amica Mutual Insurance
 providerId: amica-mutual-insurance
-publisherName: Amica Mutual Insurance
-serviceCategory: API
+publisherName: Amica Mutual Insurance Company
+serviceCategory: Insurance
 created: '2026-05-04'
-modified: '2026-05-04'
+modified: '2026-05-05'
+reconciled: false
 tags:
+  - FinOps
+  - FOCUS
   - Insurance
   - Auto Insurance
-  - Home Insurance
-  - Life Insurance
-  - Mutual Insurance
-  - Personal Insurance
-  - Financial Services
-  - FinOps
-  - Cost Management
-  - FOCUS
-description: FinOps framework definition for the Amica Mutual Insurance API surface. Provides a FOCUS-aligned
-  mapping for cost allocation, usage measurement, and unit-economics reporting across the provider's APIs.
-principles:
-  - name: Visibility
-    description: Make API consumption costs visible to engineering, product, and finance teams in near
-      real-time.
-  - name: Allocation
-    description: Tag every chargeable API call with the consuming team, environment, application, and
-      feature so cost can be allocated.
-  - name: Optimization
-    description: Continuously evaluate request patterns, caching, batching, and tier selection to reduce
-      cost per useful unit of work.
-  - name: Accountability
-    description: Establish budget owners and chargeback or showback flows for each consuming team.
-domains:
-  - name: Understand Usage and Cost
-    capabilities:
-      - Data Ingestion
-      - Allocation
-      - Reporting and Analytics
-      - Anomaly Management
-  - name: Quantify Business Value
-    capabilities:
-      - Planning and Estimating
-      - Forecasting
-      - Budgeting
-      - Benchmarking
-      - Unit Economics
-  - name: Optimize Usage and Cost
-    capabilities:
-      - Architecting for Cloud
-      - Rate Optimization
-      - Workload Optimization
-      - Cloud Sustainability
-      - Licensing and SaaS
-  - name: Manage the FinOps Practice
-    capabilities:
-      - FinOps Practice Operations
-      - FinOps Education and Enablement
-      - Invoicing and Chargeback
-      - Onboarding Workloads
-      - Intersecting Disciplines
+description: >-
+  FOCUS-aligned FinOps placeholder for Amica Mutual Insurance. Amica has no
+  public API metered billing surface; consumer spend is in the form of
+  insurance premiums, which are state-regulated rather than priced as API
+  consumption.
+notes: >-
+  No public API billing surface. Premiums are not an API charge category.
+sources:
+  - https://www.amica.com
 billingModel:
-  pricingCategory: Usage-Based
-  billingFrequency: Monthly
+  pricingCategory: Not Applicable
+  billingFrequency: Not Applicable
   billingCurrency: USD
   chargeCategories:
-    - Usage
     - Purchase
-    - Tax
-    - Credit
-    - Adjustment
-  chargeFrequency: Recurring
 focusColumns:
   ServiceName: Amica Mutual Insurance
-  ServiceCategory: Developer Tools / API
+  ServiceCategory: Insurance
   ProviderName: Amica Mutual Insurance
-  PublisherName: Amica Mutual Insurance
-  InvoiceIssuerName: Amica Mutual Insurance
-  PricingCategory: Usage-Based
-  PricingUnit: request
+  PublisherName: Amica Mutual Insurance Company
+  InvoiceIssuerName: Amica Mutual Insurance Company
   BillingCurrency: USD
-  ChargeCategory: Usage
 meters:
   - name: api_requests
-    description: Count of billable API requests
+    description: Placeholder; not billed as a developer line item
     unit: request
     aggregation: sum
     dimensions:
-      - api
-      - endpoint
-      - tier
-      - region
       - consumer
-  - name: data_egress
-    description: Bytes returned over the network in API responses
-    unit: GB
-    aggregation: sum
-    dimensions:
-      - api
-      - region
-      - consumer
-  - name: compute_seconds
-    description: Server-side compute consumed by the request, where applicable
-    unit: second
-    aggregation: sum
-    dimensions:
-      - api
-      - endpoint
-      - tier
-apis:
-  - name: Amica Mutual Insurance Website
-    baseURL: https://www.amica.com
-    tags:
-      - Insurance
-      - Auto Insurance
-      - Home Insurance
-      - Life Insurance
-    serviceName: Amica Mutual Insurance Website
-    serviceCategory: API
-unitEconomics:
-  - name: Cost per 1K Requests
-    metric: billed_cost / (api_requests / 1000)
-    target: TBD
-  - name: Cost per Active Consumer
-    metric: billed_cost / active_consumers
-    target: TBD
+principles:
+  - name: Visibility
+    description: >-
+      No Amica-issued developer telemetry. Premium and claims spend visibility
+      sits in policyholder accounts.
+  - name: Allocation
+    description: >-
+      Allocate premium spend to the household / policy, not by API consumer.
+  - name: Optimization
+    description: >-
+      Optimization levers are policy bundling and dividends, not API tuning.
+  - name: Accountability
+    description: >-
+      Budget ownership sits with the policyholder; FinOps developer practice is
+      not applicable.
 maintainers:
   - FN: API Evangelist
     email: info@apievangelist.com
