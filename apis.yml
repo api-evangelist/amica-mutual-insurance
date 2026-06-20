@@ -7,7 +7,7 @@ description: >-
   business insurance to customers across the United States. As a mutual company, Amica is owned
   by its policyholders and known for award-winning customer service and competitive pricing through
   bundling discounts.
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Insurance
   - Auto Insurance
@@ -27,7 +27,7 @@ apis:
       - Auto Insurance
       - Home Insurance
       - Life Insurance
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://www.amica.com
     humanURL: https://www.amica.com
     properties:
