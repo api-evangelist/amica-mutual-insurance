@@ -38,6 +38,8 @@ apis:
       including auto, home, life, condo, renters, marine, motorcycle, umbrella, and
       flood insurance. The company does not currently publish a public developer API.
 common:
+  - type: DomainSecurity
+    url: security/amica-mutual-insurance-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/amicamutual
   - type: Portal
