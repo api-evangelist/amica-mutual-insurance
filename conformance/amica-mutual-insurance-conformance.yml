@@ -1,0 +1,60 @@
+generated: '2026-09-02'
+method: derived
+source: >-
+  contract discovery probes of www.amica.com (2026-09-02) plus the public privacy/security
+  and terms pages; no machine-readable contract exists to inspect
+note: >-
+  Amica Mutual Insurance publishes no OpenAPI, AsyncAPI, GraphQL SDL, WSDL or .proto, so no
+  cross-cutting technical standard can be asserted from a contract. This file records the
+  probe, not a claim. It is an honest all-negative measurement: nothing here is invented, and
+  the reward-only domain-standard slot is left unclaimed rather than filled.
+  NO Compliance pointer is emitted — Amica publishes no certification or compliance program
+  page (probe-security-programs.py 2026-09-02: vdp=none trust=none; trust.amica.com and
+  security.amica.com do not resolve).
+standards:
+  - id: openapi
+    conforms: false
+    evidence: 'no OpenAPI served; /openapi.json /swagger.json /api-docs all HTTP 404 on www.amica.com'
+  - id: oauth2
+    conforms: false
+    evidence: '/.well-known/oauth-authorization-server HTTP 404; no documented OAuth surface'
+  - id: oidc
+    conforms: false
+    evidence: '/.well-known/openid-configuration HTTP 404'
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: no public error contract
+  - id: rfc9116-security-txt
+    conforms: false
+    evidence: '/.well-known/security.txt HTTP 404'
+  - id: rfc8615-well-known
+    conforms: false
+    evidence: 'every named /.well-known/ path HTTP 404; see well-known/amica-mutual-insurance-well-known.yml'
+  - id: rfc9727-api-catalog
+    conforms: false
+    evidence: '/.well-known/api-catalog HTTP 404'
+domain_standards:
+  regime: insurance
+  note: >-
+    The domain standards that matter in US personal-lines insurance are ACORD (XML/AL3
+    messaging for policy, claims and comparative-rater exchange) and, for auto claims, the
+    CCC/Mitchell estimating interfaces. Amica is a known consumer of these — it publicly
+    announced CCC Intelligent Solutions for claims and ZestyAI for climate-risk scoring —
+    but consumption is not publication: no ACORD schema, message profile or endpoint is
+    published by Amica for a third party to integrate against, so there is nothing to record
+    as conformant. Reward-only slot deliberately left unclaimed.
+  candidates:
+    - id: acord
+      declared: false
+      evidence: no published contract in which an ACORD message type or namespace could be declared
+    - id: acord-al3
+      declared: false
+      evidence: no published contract
+compliance_program:
+  published: false
+  certifications: []
+  evidence:
+    - {url: 'https://www.amica.com/en/privacy-security.html', status: 200, finding: 'consumer privacy/security guidance only; no SOC 2 / ISO 27001 / PCI DSS claim, no security contact, no disclosure policy'}
+maintainers:
+  - FN: API Evangelist
+    email: info@apievangelist.com

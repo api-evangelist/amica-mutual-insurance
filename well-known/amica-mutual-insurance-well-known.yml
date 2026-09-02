@@ -1,0 +1,57 @@
+generated: '2026-09-02'
+method: probed
+source: live HTTPS probes of the hosts named in apis.yml
+note: >-
+  Every named /.well-known/ path was probed on www.amica.com — the only host Amica Mutual
+  Insurance publishes in apis.yml — and every one returned 404 with the site's standard
+  Apache 404 body (236 bytes). No .well-known surface is served. A negative-control path
+  that cannot exist also returned 404, so this host is NOT a path-echoing or SPA catch-all
+  and the negatives are trustworthy. api.amica.com, developer.amica.com, developers.amica.com,
+  apis.amica.com, partner.amica.com, agents.amica.com, trust.amica.com, security.amica.com and
+  status.amica.com do not resolve in DNS, so there is no second host to probe.
+  NO WellKnown / SecurityTxt pointer is emitted: this file documents an absence.
+hit_count: 0
+path_echo_control: passed
+hosts:
+  - host: https://www.amica.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/api-catalog.json
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/ucp.json
+        status: 404
+      - path: /.well-known/acp.json
+        status: 404
+      - path: /.well-known/aauth-resource.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+      - path: /.well-known/amica-mutual-insurance-negative-control-7f3ab91c.json
+        status: 404
+        note: negative control — a path that cannot exist; 404 confirms no catch-all
+unresolved_hosts:
+  - api.amica.com
+  - developer.amica.com
+  - developers.amica.com
+  - apis.amica.com
+  - partner.amica.com
+  - agents.amica.com
+  - trust.amica.com
+  - security.amica.com
+  - status.amica.com
+maintainers:
+  - FN: API Evangelist
+    email: info@apievangelist.com

@@ -48,7 +48,7 @@ tags_raw:
   - Personal Insurance
   - Financial Services
 created: '2024-01-01'
-modified: '2026-04-19'
+modified: '2026-09-02'
 specificationVersion: '0.23'
 apis:
   - aid: amica-mutual-insurance:website
@@ -69,18 +69,34 @@ apis:
       including auto, home, life, condo, renters, marine, motorcycle, umbrella, and
       flood insurance. The company does not currently publish a public developer API.
 common:
+  - type: Website
+    url: https://www.amica.com/
   - type: DomainSecurity
     url: security/amica-mutual-insurance-domain-security.yml
+  - type: LLMsTxt
+    url: llms/amica-mutual-insurance-llms.txt
+  - type: Conformance
+    url: conformance/amica-mutual-insurance-conformance.yml
+  - type: Packages
+    url: packages/amica-mutual-insurance-packages.yml
+  - type: RateLimits
+    url: rate-limits/amica-mutual-insurance-rate-limits.yml
+  - type: Plans
+    url: plans/amica-mutual-insurance-plans-pricing.yml
+  - type: Blog
+    url: https://www.amica.com/en/about-us/media-center.html
+  - type: Login
+    url: https://www.amica.com/customers/login
+  - type: Pricing
+    url: https://www.amica.com/en/quote.html
   - type: GitHubOrganization
     url: https://github.com/amicamutual
-  - type: Portal
-    url: https://www.amica.com
   - type: PrivacyPolicy
-    url: https://www.amica.com/en/footer/privacy-policy.html
+    url: https://www.amica.com/en/privacy-security/website-privacy-policy.html
   - type: TermsOfService
-    url: https://www.amica.com/en/footer/terms-of-use.html
+    url: https://www.amica.com/en/terms-conditions.html
   - type: Support
-    url: https://www.amica.com/en/contact-us.html
+    url: https://www.amica.com/en/customer-service/contact-us.html
   - type: LinkedIn
     url: https://www.linkedin.com/company/amica-mutual-insurance-company
   - type: Features
@@ -128,3 +144,28 @@ common:
 maintainers:
   - FN: API Evangelist
     email: info@apievangelist.com
+x-enrichment:
+  date: '2026-09-02'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Amica's own site map enumerates the entire public site — products, claims, billing, legal,
+    careers — and contains no developer, API, integration or partner page; the only programmatic
+    surface is the authenticated consumer portal at /customers, which robots.txt disallows and
+    which ships no published contract.
+  evidence:
+    - url: https://www.amica.com/en/sitemap.html
+      status: 200
+    - url: https://www.amica.com/openapi.json
+      status: 404
+    - url: https://www.amica.com/.well-known/api-catalog
+      status: 404
+    - url: https://www.amica.com/llms.txt
+      status: 404
+    - url: https://github.com/amicamutual
+      status: 200
+  checked: '2026-09-02'

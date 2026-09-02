@@ -1,0 +1,29 @@
+generated: '2026-09-02'
+method: searched
+source: >-
+  registry.npmjs.org search, pypi.org/pypi/amica/json, rubygems.org/api/v1/gems/amica.json,
+  api.github.com/orgs/amicamutual/repos
+note: >-
+  No first-party Amica Mutual Insurance client library exists on any public registry.
+  npm registry search for "amica insurance" returns only unrelated insurtech vendors
+  (@emilgroup, @socotra, @mycoverai). The PyPI package `amica` (HTTP 200) is a rename
+  stub for `jamica`, authored by snesmaeili and unrelated to the insurer — an ownership
+  miss, not a hit. RubyGems `amica` is 404. The GitHub organization github.com/amicamutual
+  (HTTP 200, verified as "Amica Mutual Insurance Company", Lincoln RI, amica.com) holds
+  exactly two repositories, both FORKS of upstream Spring projects (spring-cloud-config,
+  spring-webflux-reactive-rest-api-demo, last pushed 2019 and 2023) — internal platform
+  forks, not published SDKs.
+  NAME-COLLISION WARNING: "Amica" also names an unrelated open-source AI-character project
+  (amica.dev) and an AI agent vendor (heyamica.com / docs.heyamica.com). Neither is Amica
+  Mutual Insurance; their SDKs and OpenAPI must never be attributed to this company.
+  NO SDKs pointer is emitted — there is no official client library to count.
+package_count: 0
+packages: []
+registries_probed:
+  - {registry: npm, query: 'amica insurance', result: no-first-party-match}
+  - {registry: pypi, package: amica, status: 200, result: different-owner (jamica rename stub)}
+  - {registry: rubygems, package: amica, status: 404, result: absent}
+  - {registry: github, org: amicamutual, status: 200, result: 2 forked repos, no SDK}
+maintainers:
+  - FN: API Evangelist
+    email: info@apievangelist.com

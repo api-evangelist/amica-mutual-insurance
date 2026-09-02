@@ -4,47 +4,33 @@ schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main
 provider: Amica Mutual Insurance
 providerId: amica-mutual-insurance
 created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-05'
+# 2026-09-02 enrichment: upgraded generated -> searched. The 2026-05-04 bulk sweep had written a
+# placeholder "No Public API Program" plan tier that Amica does not publish; it was a fabricated
+# row and has been removed in favour of an explicit plan_count: 0.
+method: searched
+modified: '2026-09-02'
 reconciled: false
 tags:
   - Insurance
   - Auto Insurance
   - Home Insurance
 description: >-
-  Amica Mutual Insurance does not publish a public developer API or pricing
-  catalog. Insurance product pricing (auto, home, life, umbrella) is
-  state-regulated and quoted via Amica.com or licensed agents, not metered as
-  an API plan.
+  Amica Mutual Insurance publishes no developer API and therefore no API plan catalog.
+  Insurance premiums are state-regulated, underwritten per risk, and quoted individually
+  through amica.com or a licensed Amica representative — a quote is not a metered API tier.
+  Partner data exchange (comparative raters, claims/FNOL, repair and restoration networks)
+  is contracted bilaterally and no rate card is published.
 notes: >-
-  No public developer plan catalog. Quote pricing is product-specific and
-  regulated, not an API plan tier.
+  plan_count: 0. Searched 2026-09-02: the site map lists no developer, API, pricing or
+  partner page; /openapi.json, /api-docs and every /.well-known/ path return 404; no
+  api./developer./partner. subdomain resolves. The only price-bearing surface is the
+  consumer quote flow.
+plan_count: 0
+plans: []
 sources:
-  - https://www.amica.com
-plans:
-  - id: amica-mutual-insurance-no-public-api
-    name: No Public API Program
-    type: enterprise
-    description: >-
-      Placeholder entry. Amica does not publish developer API tiers. Partner
-      data exchanges (claims, comparative rater integrations) are handled
-      bilaterally.
-    entries:
-      - label: Access
-        description: Bilateral / partner-only
-        name: access
-        type: flat
-        metric: varies
-        limit: -1
-        timeFrame: usage
-        geo: US
-        unit: 1
-        price: 'contact provider'
-        userMultiplied: false
-    elements:
-      - name: Bilateral Partner Agreement
+  - {url: 'https://www.amica.com/en/quote.html', status: 200, note: consumer quote flow — individually underwritten, not an API tier}
+  - {url: 'https://www.amica.com/en/sitemap.html', status: 200, note: full site map; contains no developer, API or pricing page}
+  - {url: 'https://www.amica.com/en/products.html', status: 200, note: product catalog; no published rate card}
 maintainers:
   - FN: API Evangelist
     email: info@apievangelist.com

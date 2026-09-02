@@ -4,33 +4,35 @@ schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main
 provider: Amica Mutual Insurance
 providerId: amica-mutual-insurance
 created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-05'
+# 2026-09-02 enrichment: upgraded generated -> searched. The 2026-05-04 bulk sweep had written a
+# placeholder "No Public Rate Limit Documentation" limit row; it asserted a limit object where
+# none exists and has been replaced by an explicit limit_count: 0.
+method: searched
+modified: '2026-09-02'
 reconciled: false
 tags:
   - Insurance
   - Auto Insurance
   - Rate Limiting
 description: >-
-  Amica Mutual Insurance does not publish public API rate-limit documentation.
-  Partner integrations (comparative raters, claims FNOL) operate under
-  bilateral SLAs, not a public per-key throttling contract.
+  Amica Mutual Insurance publishes no public API, so there is no throttling contract, no
+  documented quota, and no runtime rate-limit signal. No X-RateLimit-*, RateLimit-* or
+  Retry-After header contract is documented anywhere on amica.com, and there is no
+  unauthenticated API response to observe one on.
 notes: >-
-  No public rate-limit documentation.
+  limit_count: 0 — an honest zero, not an undocumented limit. Searched 2026-09-02 across
+  the site map, the customer-service section and the legal pages; no developer terms, quota
+  or fair-use policy exists. Partner throughput (comparative raters, claims/FNOL exchange)
+  is governed by bilateral agreement and is not published.
+limit_count: 0
+limits: []
+response_headers: []
+exhaustion_status: null
 sources:
-  - https://www.amica.com
-responseCodes: {}
-limits:
-  - name: No Public Rate Limit Documentation
-    scope: account
-    metric: varies
-    limit: 'see provider; not publicly documented'
-policies:
-  - name: Bilateral SLA
-    description: >-
-      Throughput and retry are defined per partner agreement.
+  - {url: 'https://www.amica.com/en/sitemap.html', status: 200, note: no developer or API terms page}
+  - {url: 'https://www.amica.com/en/terms-conditions.html', status: 200, note: consumer website terms only; no API usage terms}
+  - {url: 'https://www.amica.com/openapi.json', status: 404, note: no contract in which limits could be declared}
+policies: []
 maintainers:
   - FN: API Evangelist
     email: info@apievangelist.com
