@@ -1,7 +1,9 @@
 ---
 title: Amica Mutual Insurance Company Delivers Outstanding ...
 url: https://www.businesswire.com/news/home/20250319522296/en/Amica-Mutual-Insurance-Company-Delivers-Outstanding-Customer-Care-with-Strategy-One
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Amica Mutual Insurance" press release artificial intelligence'
 position: 1
 source: serpapi-google

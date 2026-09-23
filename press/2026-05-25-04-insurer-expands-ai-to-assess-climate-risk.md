@@ -1,7 +1,9 @@
 ---
 title: Insurer Expands AI to Assess Climate Risk
 url: https://rethinking65.com/insurer-expands-ai-to-assess-climate-risk/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Amica Mutual Insurance" press release artificial intelligence'
 position: 4
 source: serpapi-google

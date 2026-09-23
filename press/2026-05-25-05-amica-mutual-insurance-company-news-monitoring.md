@@ -1,7 +1,9 @@
 ---
 title: Amica Mutual Insurance Company News Monitoring
 url: https://insurance.einnews.com/news/amica-mutual-insurance-company
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Amica Mutual Insurance" press release artificial intelligence'
 position: 5
 source: serpapi-google
