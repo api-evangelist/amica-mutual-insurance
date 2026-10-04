@@ -38,7 +38,7 @@ tags:
   - Life Insurance
   - Mutual Insurance
   - Personal Insurance
-  - Financial-Services
+  - Financial Services
 tags_raw:
   - Insurance
   - Auto Insurance
@@ -47,6 +47,7 @@ tags_raw:
   - Mutual Insurance
   - Personal Insurance
   - Financial Services
+  - Financial-Services
 created: '2024-01-01'
 modified: '2026-09-02'
 specificationVersion: '0.23'
@@ -59,7 +60,6 @@ apis:
       - Home Insurance
       - Life Insurance
     image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://www.amica.com
     humanURL: https://www.amica.com
     properties:
       - type: Website
