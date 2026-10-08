@@ -69,6 +69,8 @@ apis:
       including auto, home, life, condo, renters, marine, motorcycle, umbrella, and
       flood insurance. The company does not currently publish a public developer API.
 common:
+  - type: FinOps
+    url: finops/amica-mutual-insurance-finops.yml
   - type: Website
     url: https://www.amica.com/
   - type: DomainSecurity
