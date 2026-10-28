@@ -1,4 +1,4 @@
-# Amica Mutual Insurance (amica-mutual-insurance)
+# Amica Mutual Insurance
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,77 +66,105 @@
 
 Amica Mutual Insurance, founded in 1907, is a mutual insurance company providing automobile, homeowners, condo, renters, life, marine, motorcycle, umbrella liability, flood, and small business insurance to customers across the United States. As a mutual company, Amica is owned by its policyholders and known for award-winning customer service and competitive pricing through bundling discounts.
 
-**URL:** [https://www.amica.com](https://www.amica.com)
+**Areas:** Insurance · Auto Insurance · Home Insurance · Life Insurance · Mutual Insurance · Personal Insurance · Financial Services
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Amica Mutual Insurance on APIs.io
 
-## Tags:
+Everything profiled for Amica Mutual Insurance is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/amica-mutual-insurance/](https://apis.io/providers/amica-mutual-insurance/)** — or go straight to one of the APIs or properties below.
 
- - Insurance, Auto Insurance, Home Insurance, Life Insurance, Mutual Insurance, Personal Insurance, Financial Services
+### APIs (1)
 
-## Timestamps
+- [Amica Mutual Insurance Website](https://apis.io/apis/amica-mutual-insurance/website/) — Amica Mutual Insurance provides a full range of personal insurance products including auto, home, life, condo, renters, marine, motorcycle, umbrella, and…
 
-- **Created:** 2024-01-01
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Amica Mutual Insurance Website
-Amica Mutual Insurance provides a full range of personal insurance products including auto, home, life, condo, renters, marine, motorcycle, umbrella, and flood insurance. The company does not currently publish a public developer API.
+#### Security (1)
 
-**Human URL:** [https://www.amica.com](https://www.amica.com)
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags:
+- [Amica Mutual Insurance Domain Security](https://apis.io/security/amica-mutual-insurance/amica-mutual-insurance-domain-security/)
 
- - Insurance, Auto Insurance, Home Insurance, Life Insurance
+#### Plans and pricing (1)
 
-#### Properties
+Published plans, tiers and prices.
 
-- [Website](https://www.amica.com)
+- [Amica Mutual Insurance Plans Pricing](https://apis.io/plans/amica-mutual-insurance/amica-mutual-insurance-plans-pricing/)
 
-## Common Properties
+#### Rate limits (1)
 
-- [Portal](https://www.amica.com)
-- [PrivacyPolicy](https://www.amica.com/en/footer/privacy-policy.html)
-- [TermsOfService](https://www.amica.com/en/footer/terms-of-use.html)
-- [Support](https://www.amica.com/en/contact-us.html)
-- [LinkedIn](https://www.linkedin.com/company/amica-mutual-insurance-company)
+Published request limits.
 
-## Features
+- [Amica Mutual Insurance Rate Limits](https://apis.io/rate-limits/amica-mutual-insurance/amica-mutual-insurance-rate-limits/)
 
-| Name | Description |
-|------|-------------|
-| Auto Insurance | Comprehensive automobile insurance coverage including collision, comprehensive, liability, medical payments, and uninsured motorist protection with roadside assistance. |
-| Home Insurance | Homeowners insurance including Platinum Choice Home policy providing up to 30% additional dwelling coverage, personal property, and liability protection. |
-| Life Insurance | Term life, whole life, and universal life insurance products plus annuities for retirement income planning. |
-| Condo Insurance | Condominium insurance covering personal property, liability, and loss assessment for condo owners. |
-| Renters Insurance | Renters insurance protecting personal property and providing liability coverage for apartment and home renters. |
-| Umbrella Insurance | Personal umbrella liability insurance providing additional liability coverage above auto and home policy limits. |
-| Marine Insurance | Boat and watercraft insurance for pleasure craft, sailboats, and personal watercraft. |
-| Flood Insurance | Flood insurance coverage for homes and personal property in flood-prone areas. |
-| Small Business Insurance | Commercial insurance solutions for small businesses including property, liability, and business owner policies. |
-| Digital Account Management | 24/7 online account management, mobile app access, claim reporting and tracking, and policy management tools. |
+#### FinOps (1)
 
-## Use Cases
+What the API costs to run, by operation.
 
-| Name | Description |
-|------|-------------|
-| Auto Coverage | Protect against vehicle damage, accidents, theft, and liability with comprehensive auto insurance and roadside assistance. |
-| Home Protection | Insure homes against damage from fire, storms, theft, and other perils with flexible coverage options including extended replacement cost. |
-| Policy Bundling | Combine multiple insurance policies (auto, home, life) for premium discounts and simplified policy management through a single insurer. |
-| Life Insurance Planning | Secure family financial protection and retirement income planning with term, whole life, and annuity products. |
-| Liability Protection | Protect personal assets from large liability claims exceeding standard policy limits with umbrella insurance coverage. |
-| Claims Management | File, track, and manage insurance claims 24/7 through online portal, mobile app, or dedicated claims representatives. |
+- [Amica Mutual Insurance Finops](https://apis.io/finops/amica-mutual-insurance/amica-mutual-insurance-finops/)
 
-## Integrations
+## Where to find this API
 
-| Name | Description |
-|------|-------------|
-| Contractor Connection | Referral network connecting policyholders with pre-screened contractors for home repair and restoration after covered losses. |
-| Roadside Assistance Network | 24/7 roadside assistance service integration for towing, battery jump-starts, flat tire changes, and fuel delivery. |
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-## Maintainers
+- [Website](https://www.amica.com/)
+- [Pricing](https://www.amica.com/en/quote.html)
+- [Support](https://www.amica.com/en/customer-service/contact-us.html)
+- [Blog](https://www.amica.com/en/about-us/media-center.html)
+- [Terms of service](https://www.amica.com/en/terms-conditions.html)
+- [Privacy policy](https://www.amica.com/en/privacy-security/website-privacy-policy.html)
+- [GitHub](https://github.com/amicamutual)
 
-**FN:** API Evangelist
+## API Evangelist rating
 
-**Email:** info@apievangelist.com
+**Kin Score 15.8** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 38.2 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.7** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/amica-mutual-insurance/](https://apis.io/providers/amica-mutual-insurance/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Amica Mutual Insurance: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/amica-mutual-insurance/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
